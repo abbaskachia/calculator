@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="calculator">
+        <div class="display">
+            <div id="previous"></div>
+            <div id="current"></div>
+        </div>
+        <div class="buttons">
+            <button class="del" onclick="deleteNumber()">del</button>
+            <button class="AC" onclick="clearDisplay()">AC</button>
+            <button class="Percentage" onclick="percentage()">%</button>
+            <button class="divide" onclick="chooseOperator('/')">/</button>
+            <button class="seven" onclick="addNumber('7')">7</button>
+            <button class="eight" onclick="addNumber('8')">8</button>
+            <button class="nine" onclick="addNumber('9')">9</button>
+            <button class="multiply" onclick="chooseOperator('*')">*</button>
+            <button class="four" onclick="addNumber('4')">4</button>
+            <button class="five" onclick="addNumber('5')">5</button>
+            <button class="six" onclick="addNumber('6')">6</button>
+            <button class="gray" onclick="chooseOperator('-')">-</button>
+            <button class="one" onclick="addNumber('1')">1</button>
+            <button class="two" onclick="addNumber('2')">2</button>
+            <button class="three" onclick="addNumber('3')">3</button>
+            <button class="gray" onclick="chooseOperator('+')">+</button>
+            <button class="zero" onclick="addNumber('0')">0</button>
+            <button class="decimal" onclick="addNumber('.')">.</button>
+            <button class="equals" onclick="calculate()">=</button>
+
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
